@@ -30,7 +30,7 @@ function App() {
       }}
     >
       <iframe
-        src="http://chat-bot-ui.vercel.app/"
+        src="https://chat-bot-ui.vercel.app/"
         frameBorder={0}
         height={mobile ? size[1] : 626}
         width={mobile ? size[0] : 400}
