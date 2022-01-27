@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect, useEffect, useRef } from "react";
+import { useState, useLayoutEffect, useRef } from "react";
 import { isMobile } from "react-device-detect";
 import "./App.css";
 import ChatIcon from "./assets/chat.svg";
@@ -47,7 +47,7 @@ function App() {
 
       <button
         onClick={(e) => {
-          e.stopPropagation()
+          e.stopPropagation();
           if (iFrameRef.current) {
             iFrameRef.current.src = "https://chat-bot-ui.vercel.app/";
             setVisible(true);
