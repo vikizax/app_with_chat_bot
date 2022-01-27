@@ -27,6 +27,7 @@ function App() {
       onClick={(e) => {
         e.stopPropagation();
         if (visible) setVisible(false);
+        if (iFrameRef.current) iFrameRef.current.src = "";
       }}
     >
       <iframe
@@ -46,6 +47,7 @@ function App() {
 
       <button
         onClick={(e) => {
+          e.stopPropagation()
           if (iFrameRef.current) {
             iFrameRef.current.src = "https://chat-bot-ui.vercel.app/";
             setVisible(true);
